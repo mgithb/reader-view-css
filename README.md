@@ -17,6 +17,15 @@ pre, code {
   font-family: monospace; /* Font family for code elements */
   border-radius: 5px; /* Rounded corners for aesthetics */
   padding: 5px;
+  white-space: pre-wrap; /* Preserve whitespace and wrap text as needed */
+  overflow-x: auto; /* Add horizontal scrolling if the content is too wide */
+}
+
+/* Ensure that code elements within pre blocks do not apply additional styling */
+pre code {
+  padding: 0;
+  border-radius: 0;
+  white-space: inherit; /* Inherit whitespace handling from pre element */
 }
 
 /* Dark mode specific styles */
